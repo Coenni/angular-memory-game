@@ -3,5 +3,14 @@
     You've completed the game.
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-    <button mat-raised-button color="primary" [mat-dialog-close]="true" cdkFocusInitial>Shuffle and Restart</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="'fruits'"  cdkFocusInitial>
+      <img style="height: 200px;" src="assets/fruits/card-back.png">
+    </button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="'animals'"  cdkFocusInitial>
+      <img style="height: 200px;" src="assets/animals/card-back.png">
+    </button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="'transport'"  cdkFocusInitial>
+    <img style="height: 200px;" src="assets/transport/card-back.png">
+  </button>
+
 </mat-dialog-actions>

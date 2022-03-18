@@ -35,6 +35,8 @@ export class GameCardComponent implements OnInit {
 
   @Input() data: CardData;
 
+  @Input() topic: string;
+
   @Output() cardClicked = new EventEmitter();
 
   constructor() { }

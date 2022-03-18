@@ -1,8 +1,8 @@
 <div class="card" (click)="cardClicked.emit()" [@cardFlip]="data.state">
     <div class="back" style="background-color: beige">
-        <img src="assets/card-back-fruit.png">
+        <img src="../../assets/{{topic}}/card-back.png">
     </div>
     <div class="front">
-        <img  [src]="'assets/' + data.imageId + '.png'">
+        <img  [src]="'assets/' + topic + '/'+ data.imageId + '.png'">
     </div>
 </div>
